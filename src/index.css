@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-tertiary-fixed-variant: #92001b;
+  --color-on-surface-variant: #c3c5d8;
+  --color-tertiary: #ffb3b0;
+  --color-inverse-on-surface: #2c303c;
+  --color-on-tertiary-fixed: #410007;
+  --color-primary-fixed-dim: #b6c4ff;
+  --color-surface-container: #1b1f2b;
+  --color-on-secondary-fixed-variant: #005143;
+  --color-inverse-primary: #004ee8;
+  --color-surface-dim: #0f131e;
+  --color-tertiary-container: #da2237;
+  --color-on-secondary-container: #003027;
+  --color-surface-bright: #353945;
+  --color-background: #0f131e;
+  --color-outline: #8d90a2;
+  --color-on-primary: #002780;
+  --color-on-primary-container: #f7f5ff;
+  --color-on-primary-fixed-variant: #003ab3;
+  --color-surface-container-lowest: #0a0e19;
+  --color-primary-container: #2962ff;
+  --color-on-secondary: #00382e;
+  --color-outline-variant: #434656;
+  --color-on-primary-fixed: #001550;
+  --color-surface-container-highest: #313441;
+  --color-surface-highest: #313441;
+  --color-surface-container-low: #171b26;
+  --color-on-surface: #dfe2f2;
+  --color-secondary: #66dabf;
+  --color-secondary-container: #20a28a;
+  --color-surface-tint: #b6c4ff;
+  --color-secondary-fixed: #84f7db;
+  --color-surface-variant: #313441;
+  --color-surface-container-high: #262a35;
+  --color-primary-fixed: #dce1ff;
+  --color-error: #ffb4ab;
+  --color-tertiary-fixed: #ffdad8;
+  --color-primary: #b6c4ff;
+  --color-secondary-fixed-dim: #66dabf;
+  --color-tertiary-fixed-dim: #ffb3b0;
+  --color-surface: #0f131e;
+  --color-on-tertiary: #680010;
+  --color-error-container: #93000a;
+  --color-on-tertiary-container: #fff4f3;
+  --color-on-background: #dfe2f2;
+  --color-on-secondary-fixed: #00201a;
+  --color-inverse-surface: #dfe2f2;
+  --color-on-error-container: #ffdad6;
+  --color-on-error: #690005;
+
+  --spacing-gutter-loose: 0.5rem;
+  --spacing-margin: 0rem;
+  --spacing-gutter: 1px;
+  --spacing-space-md: 0.5rem;
+  --spacing-space-xl: 1rem;
+  --spacing-space-lg: 0.75rem;
+  --spacing-space-sm: 0.25rem;
+  --spacing-space-xs: 0.125rem;
+  --spacing-margin-mobile: 0.5rem;
+
+  --font-body-default: "Inter", sans-serif;
+  --font-headline-panel: "Inter", sans-serif;
+  --font-badge-mono: "JetBrains Mono", monospace;
+  --font-body-compact: "Inter", sans-serif;
+  --font-display-price: "JetBrains Mono", monospace;
+  --font-label-caps: "Inter", sans-serif;
+  --font-title-section: "Inter", sans-serif;
+  --font-data-mono-sm: "JetBrains Mono", monospace;
+  --font-display-price-mobile: "JetBrains Mono", monospace;
+  --font-data-mono-md: "JetBrains Mono", monospace;
+  --font-data-mono-lg: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0f131e;
+    color: #dfe2f2;
+    overscroll-behavior: none;
+  }
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.text-body-default {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.text-headline-panel {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+.text-badge-mono {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.text-body-compact {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.text-display-price {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.text-label-caps {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+.text-title-section {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.text-data-mono-sm {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+.text-display-price-mobile {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.text-data-mono-md {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.text-data-mono-lg {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "AlphaPulse 全球宏观与量化交易终端",
+  "description": "机构级全球宏观脉搏、实时订单流报价、K线量化分析工作台与高敏感财经日历终端。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
